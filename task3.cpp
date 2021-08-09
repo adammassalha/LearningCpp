@@ -5,8 +5,8 @@ using namespace std;
 enum class Monster
 {
     
-    orc,
-    goblin,
+    orc = 2,
+    goblin=2,
     troll,
     orge,
     skeletonse
@@ -15,6 +15,16 @@ enum class Monster
 int main()
 {
     Monster m { Monster::troll};
-    
+
     return 0;
 }
+
+/*
+a-yes
+b-yes
+c-no
+d-yes
+e-yes
+f-yes
+
+*/
