@@ -6,6 +6,7 @@
 int readNumber()
 {
     int x;
+    std::cout<<"enter a number";
     std::cin>>x;
     int sum;
     sum = x;
