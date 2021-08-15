@@ -6,7 +6,7 @@
 int readNumber()
 {
     int x;
-    std::cout<<"enter a number";
+    std::cout<<"enter a number: "<<std::endl;
     std::cin>>x;
     int sum;
     sum = x;
@@ -15,5 +15,6 @@ int readNumber()
 
 void writeNumber(int sum)
 {
+    std::cout<<"the result is:"<<std::endl;
     std::cout << sum;
 }
