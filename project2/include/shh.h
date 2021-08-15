@@ -1,3 +1,3 @@
 #include <iostream>
-int readNumber(int x);
+int readNumber();
 void writeNumber(int sum);

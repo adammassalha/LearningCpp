@@ -3,8 +3,10 @@
 
 
 
-int readNumber(int x)
+int readNumber()
 {
+    int x;
+    std::cin>>x;
     int sum;
     sum = x;
     return sum;
