@@ -18,9 +18,9 @@ public:
     void setYear(int year);
     void copy(Date day);
     
-    int getDay(){return m_day;};
-    int getMonth(){return m_month;};
-    int getYear(){return m_year;};
+    int getDay(){return m_day;}
+    int getMonth(){return m_month;}
+    int getYear(){return m_year;}
     
     void print(int day,int month,int year);
    

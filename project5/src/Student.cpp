@@ -1,7 +1,7 @@
 #include "Student.h"
 #include "Date.h"
 
-    Student::Student (int id,const std::string name,Date birthday, int grades[3],const int gradesize){
+    Student::Student (int id, std::string name,Date birthday, int grades[3], int gradesize){
         std::string str = std::to_string(id);
 	    int lengthofNumber = str.length();
 	
@@ -10,7 +10,7 @@
         }
         m_id=id;
         m_name=name;
-        m_birthday = birthday;
+        m_birthday.copy(birthday);
         for(int i=0;i<3;i++){
              m_grades[i]=grades[i];
         }
@@ -30,20 +30,20 @@
     }
     
     void Student::Print(){
-        std::cout<<"Student id:"<<m_id<<std::endl;
-        std::cout<<"---------------"<<std::endl;
-        std::cout<<"Name:"<<m_name<<std::endl;
-        std::cout<<"Birthday:"<<m_birthday.getDay()<<"/"<<m_birthday.getMonth()<<"/"<<m_birthday.getYear()<<std::endl;
-        std::cout<<"avg:"<<GetAverage()<<std::endl;
+        std::cout << "Student id: " << m_id<<std::endl;
+        std::cout << "---------------" << std::endl;
+        std::cout << "Name: " << m_name << std::endl;
+        std::cout << "Birthday:"<< m_birthday.getDay() << "/" << m_birthday.getMonth() << "/" << m_birthday.getYear() << std::endl;
+        std::cout << "avg:" << GetAverage() << std::endl << std::endl;
         
     }
     int Student::GetAverage(){
         int sum = 0;
         int avg = 0;
         
-        for(int i=0;i<3;i++){
+        for(int i=0;i<m_grades_size;i++){
             sum+=m_grades[i];
         }
-        avg=sum/3;
+        avg=sum/m_grades_size;
         return avg;
     }

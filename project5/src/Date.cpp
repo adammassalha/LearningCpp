@@ -10,7 +10,7 @@
 
     };
     void Date::setday(int day){
-        day = m_day;
+        m_day = day;
         
     }
     void Date::setMonth(int month){
@@ -29,6 +29,6 @@
     void Date::copy(Date date1){
         m_day =date1.m_day;
         m_month=date1.m_month;
-        m_year=m_year;
+        m_year=date1.m_year;
     }
    

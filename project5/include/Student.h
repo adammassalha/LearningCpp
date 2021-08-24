@@ -12,7 +12,7 @@ private:
     public:
     void copy(Student student1);
     Student()=default;
-    Student (int id,const std::string name,Date birthday, int grades[3],const int gradesize);
+    Student (int id, std::string name,Date birthday, int grades[3], int gradesize);
     void Print();
     int GetAverage();
 
